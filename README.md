@@ -5,4 +5,5 @@
 ```bash
 ln -s ~/projects/my_lunarvim_configs/lv-config.lua ~/.config/nvim/
 ln -s ~/projects/my_lunarvim_configs/lv-user/ ~/.config/nvim/lua/
+ln -s ~/projects/my_lunarvim_configs/spell/ ~/.config/nvim/
 ```
