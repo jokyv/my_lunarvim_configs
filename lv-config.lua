@@ -25,7 +25,7 @@ O.default_options.spell = true
 O.plugin.dashboard.active = true
 -- O.plugin.indent_line.active = true
 O.plugin.zen.active = false
-O.plugin.floatterm.active = false
+-- O.plugin.floatterm.active = false
 
 -- dashboard
 O.plugin.dashboard.custom_header = {""}
