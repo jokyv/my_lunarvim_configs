@@ -1,4 +1,3 @@
-
 --[[
 O is the global options object
 
@@ -23,6 +22,7 @@ O.default_options.spell = true
 
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 O.plugin.dashboard.active = true
+-- O.plugin.terminal.active = true
 -- O.plugin.indent_line.active = true
 O.plugin.zen.active = false
 -- O.plugin.floatterm.active = false
@@ -38,6 +38,7 @@ O.treesitter.highlight.enabled = true
 
 -- python
 -- O.python.linter = 'flake8'
+-- O.lang.python.formatter.exe = "black"
 O.lang.python.isort = true
 O.lang.python.diagnostics.virtual_text = true
 O.lang.python.analysis.use_library_code_types = true
@@ -46,6 +47,7 @@ O.lang.python.analysis.use_library_code_types = true
 O.lang.tsserver.linter = nil
 
 -- TODO: add additional plugins
+-- #WHITE
 -- Additional Plugins
 O.user_plugins = {
   {"folke/todo-comments.nvim",
