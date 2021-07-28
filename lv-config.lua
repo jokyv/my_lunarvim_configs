@@ -47,11 +47,8 @@ O.lang.python.analysis.use_library_code_types = true
 O.lang.tsserver.linter = nil
 
 -- TODO: add additional plugins
-<<<<<<< Updated upstream
 -- #WHITE
-=======
 -- #000000
->>>>>>> Stashed changes
 -- Additional Plugins
 O.user_plugins = {
   {"folke/todo-comments.nvim",
