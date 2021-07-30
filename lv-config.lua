@@ -4,7 +4,7 @@ lvim.lint_on_save = true
 lvim.colorscheme = "spacegray"
 lvim.timeoutlen = 100
 lvim.auto_close_tree = 0
-lvim.wrap_lines = false
+lvim.wrap_lines = true
 lvim.ignore_case = true
 lvim.smart_case = true
 
@@ -38,8 +38,11 @@ lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 0
 
+-- auto-pairs
+-- lvim.builtin.auto-pairs.add_rules = ("<", ">", "lua")
+
 -- dashboard
-lvim.builtin.dashboard.header = {""}
+lvim.builtin.dashboard.custom_header = {""}
 -- lvim.plugin.dashboard.footer = {""}
 
 -- if you don't want all the parsers change this to a table of the ones you want
