@@ -43,7 +43,7 @@ lvim.builtin.nvimtree.show_icons.git = 0
 
 -- dashboard
 lvim.builtin.dashboard.custom_header = {""}
--- lvim.plugin.dashboard.footer = {""}
+lvim.builtin.dashboard.footer = {""}
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = "maintained"
