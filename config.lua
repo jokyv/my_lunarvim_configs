@@ -1,7 +1,8 @@
--- general
+-- general settings
 lvim.format_on_save = true
 lvim.lint_on_save = true
-lvim.colorscheme = "spacegray"
+lvim.colorscheme = "tokyonight"
+-- lvim.colorscheme = "spacegray"
 lvim.timeoutlen = 100
 lvim.auto_close_tree = 0
 lvim.wrap_lines = true
@@ -39,11 +40,9 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- LSP settings
 lvim.lsp.diagnostics.virtual_text = false
 
---  TODO: add Additional Plugins
--- #WHITE
--- #000000
--- Additional Plugins
+-- NOTE: Additional Plugins here!
 lvim.plugins = {
+	{ "folke/tokyonight.nvim" },
 	{
 		"folke/todo-comments.nvim",
 		config = function()
@@ -60,10 +59,10 @@ lvim.plugins = {
 
 -- python
 -- lvim.lang.python.lsp = {
---   {
---     exe = "jedi",
---     args = {},
---   },
+-- 	{
+-- 		exe = "jedi",
+-- 		args = {},
+-- 	},
 -- }
 
 lvim.lang.python.linters = {
