@@ -1,17 +1,17 @@
 -- NOTE: general settings here!
 lvim.format_on_save = true
-lvim.lint_on_save = true
+lvim.lint_on_save = false
 lvim.colorscheme = "tokyonight"
 -- lvim.colorscheme = "spacegray"
-lvim.timeoutlen = 100
+lvim.timeoutlen = 200
 lvim.auto_close_tree = 0
 lvim.wrap_lines = true
 lvim.ignore_case = true
 lvim.smart_case = true
+lvim.smartindent = true
 lvim.leader = "space"
 -- have spell check on all the time
 -- lvim.default_settings.spell = true
--- keymappings
 
 -- NOTE: settings for core plugins here!
 -- dashboard settings
@@ -34,6 +34,9 @@ lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 -- LSP settings
 lvim.lsp.diagnostics.virtual_text = false
+-- compe settings
+lvim.builtin.compe.autocomplete = true
+
 
 -- NOTE: Additional Plugins here!
 lvim.plugins = {
@@ -41,15 +44,14 @@ lvim.plugins = {
 	{
 		"simrat39/rust-tools.nvim",
 		config = function()
-			require("user.rust_tools").config() -- or just put your config here
-			-- or use this https://github.com/abzcoding/lvim/blob/main/lua/user/rust_tools.lua
+			require("user.rust_tools").config()
 		end,
-		ft = { "rust", "rs" }, -- or you can not lazy load and remove this line
+		ft = { "rust", "rs" },
 	},
 	{
 		"folke/todo-comments.nvim",
 		config = function()
-			require("todo-comments").setup()
+			require("user.todo-comments").config()
 		end,
 	},
 	{
@@ -60,7 +62,7 @@ lvim.plugins = {
 	},
 }
 
--- PYTHON
+-- PYTHON: settings
 -- lvim.lang.python.lsp = {
 -- 	{
 -- 		exe = "jedi",
@@ -82,7 +84,7 @@ lvim.lang.python.formatters = {
 	},
 }
 
--- lua
+-- LUA: settings
 lvim.lang.lua.formatters = {
 	{
 		exe = "stylua",
@@ -90,8 +92,9 @@ lvim.lang.lua.formatters = {
 	},
 }
 
--- RUST settings
+-- RUST: settings
 lvim.lsp.override = { "rust" }
+lvim.lang.rust.formatting = { { exe = 'rustfmt' } }
 lvim.autocommands.custom_groups = {
 	-- rust
 	{ "Filetype", "rust", "nnoremap <leader>m <cmd>lua require('core.terminal')._exec_toggle('cargo build;read')<CR>" },
