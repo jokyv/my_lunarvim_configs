@@ -16,14 +16,15 @@ lvim.leader = "space"
 -- NOTE: settings for core plugins here!
 -- dashboard settings
 lvim.builtin.dashboard.active = true
-lvim.builtin.dashboard.custom_header = { "" }
 lvim.builtin.dashboard.footer = { "" }
+lvim.builtin.dashboard.custom_header = { "" }
 -- terminal settings
 lvim.builtin.terminal.active = true
 -- nvimtree settings
 lvim.builtin.nvimtree.side = "left"
-lvim.builtin.nvimtree.show_icons.git = 0
-lvim.builtin.nvimtree.hide_dotfiles = 0
+lvim.builtin.nvimtree.hide_dotfiles = false
+lvim.builtin.nvimtree.show_icons.git = false
+lvim.builtin.nvimtree.ignore = {".git", ".idea", ".vscode"}
 -- barbar settings
 lvim.builtin.bufferline.active = true
 -- auto-pairs
@@ -32,6 +33,7 @@ lvim.builtin.bufferline.active = true
 lvim.builtin.treesitter.ensure_installed = "maintained"
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
+lvim.builtin.treesitter.autotag.enable = true
 -- LSP settings
 lvim.lsp.diagnostics.virtual_text = false
 -- compe settings
