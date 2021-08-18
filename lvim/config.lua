@@ -38,7 +38,8 @@ lvim.builtin.treesitter.autotag.enable = true
 lvim.lsp.diagnostics.virtual_text = false
 -- compe settings
 lvim.builtin.compe.autocomplete = true
-
+-- galaxy line
+lvim.builtin.galaxyline.show_mode = true
 
 -- NOTE: Additional Plugins here!
 lvim.plugins = {
