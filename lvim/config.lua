@@ -9,6 +9,8 @@ lvim.leader = "space"
 -- lvim.default_settings.spell = true
 
 -- NOTE: settings for core plugins here!
+-- git signs settings
+-- lvim.builtin.gitsigns.active = false
 -- dashboard settings
 lvim.builtin.dashboard.active = true
 lvim.builtin.dashboard.footer = { "" }
@@ -19,7 +21,7 @@ lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.side = "left"
 lvim.builtin.nvimtree.hide_dotfiles = false
 lvim.builtin.nvimtree.show_icons.git = false
-lvim.builtin.nvimtree.ignore = {".git", ".idea", ".vscode"}
+lvim.builtin.nvimtree.ignore = { ".git", ".idea", ".vscode" }
 -- barbar settings
 lvim.builtin.bufferline.active = true
 -- auto-pairs
@@ -33,8 +35,8 @@ lvim.builtin.treesitter.autotag.enable = true
 lvim.lsp.diagnostics.virtual_text = false
 -- compe settings
 lvim.builtin.compe.autocomplete = true
--- galaxy line
-lvim.builtin.galaxyline.show_mode = true
+-- lua line settings
+lvim.builtin.lualine.options.component_separators = { "||" }
 
 -- NOTE: Additional Plugins here!
 lvim.plugins = {
@@ -71,14 +73,14 @@ lvim.plugins = {
 lvim.lang.python.linters = {
 	{
 		exe = "flake8",
-		args = {},
+		-- args = {},
 	},
 }
 
 lvim.lang.python.formatters = {
 	{
 		exe = "black",
-		args = {},
+		-- args = {},
 	},
 }
 
@@ -86,13 +88,13 @@ lvim.lang.python.formatters = {
 lvim.lang.lua.formatters = {
 	{
 		exe = "stylua",
-		args = {},
+		-- args = {},
 	},
 }
 
 -- RUST: settings
 lvim.lsp.override = { "rust" }
-lvim.lang.rust.formatting = { { exe = 'rustfmt' } }
+lvim.lang.rust.formatting = { { exe = "rustfmt" } }
 lvim.autocommands.custom_groups = {
 	-- rust
 	{ "Filetype", "rust", "nnoremap <leader>m <cmd>lua require('core.terminal')._exec_toggle('cargo build;read')<CR>" },
