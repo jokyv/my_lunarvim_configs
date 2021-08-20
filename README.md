@@ -1,3 +1,5 @@
+# TODO: merge with the rest of your dotfiles
+
 ## my_lunarvim_configs
 - This is my personal Lunarvim config files and folders
 

@@ -2,13 +2,8 @@
 lvim.format_on_save = true
 lvim.lint_on_save = false
 lvim.colorscheme = "tokyonight"
+-- vim.g.tokyonight_style = "night"
 -- lvim.colorscheme = "spacegray"
-lvim.timeoutlen = 200
-lvim.auto_close_tree = 0
-lvim.wrap_lines = true
-lvim.ignore_case = true
-lvim.smart_case = true
-lvim.smartindent = true
 lvim.leader = "space"
 -- have spell check on all the time
 -- lvim.default_settings.spell = true
